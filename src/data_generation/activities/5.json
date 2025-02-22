@@ -1,0 +1,41 @@
+{
+    "activity_name": "Sensory Craft Time",
+    "Activity_format": "Off-line",
+    "Website": "",
+    "city": "Chicago",
+    "venue": "Sensory Studio at Lincoln Park, 123 Craft Ave, Chicago, IL",
+    "age_range": [
+        5,
+        10
+    ],
+    "skills_required": [
+        "Basic motor skills",
+        "Following instructions"
+    ],
+    "sensory_avoid": [
+        "Strong scents"
+    ],
+    "materials_to_prepare": [
+        "Colored paper",
+        "Textured fabric",
+        "Child-safe scissors",
+        "Glue sticks",
+        "Markers"
+    ],
+    "steps": [
+        "Start with a welcome circle to introduce everyone.",
+        "Show examples of finished sensory crafts.",
+        "Guide children to choose their crafting materials.",
+        "Assist children in creating their sensory crafts, encouraging them to choose textures they like.",
+        "Display and admire each child's finished craft.",
+        "End with a goodbye circle to share experiences."
+    ],
+    "safety": "Ensure all materials are non-toxic and appropriate for age.",
+    "date": "2023-11-15",
+    "start_at": "14:00",
+    "duration": "1 hour",
+    "collborate_type": "Parent_assisted",
+    "cost": "$15 per child",
+    "contact_person": "Karen Miles",
+    "contact_number": "312-555-0199"
+}

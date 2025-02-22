@@ -1,0 +1,39 @@
+{
+    "activity_name": "Art and Sensory Exploration",
+    "Activity_format": "Off-line",
+    "Website": "",
+    "city": "Portland",
+    "venue": "Portland Children's Museum, 4015 SW Canyon Rd, Portland, OR 97221",
+    "age_range": [
+        5,
+        12
+    ],
+    "skills_required": [
+        "Basic fine motor skills",
+        "Communication"
+    ],
+    "sensory_avoid": [
+        "Loud noises",
+        "Strong smells"
+    ],
+    "materials_to_prepare": [
+        "Old T-shirts",
+        "Comfortable shoes"
+    ],
+    "steps": [
+        "Arrive at Portland Children's Museum 15 minutes before the activity start time.",
+        "Meet in the main entrance where the guide will be present to help families.",
+        "Move to the art zone where children can try different sensory materials like clay, watercolors, and sand.",
+        "Each child is given a personal art station with a visual guide to help them through the activity.",
+        "Parents or guardians are encouraged to assist their children as they explore.",
+        "A guided sensory story is available as an interactive session for children to engage with textures and sounds."
+    ],
+    "safety": "Please ensure children are dressed comfortably and aware of boundaries within the venue. Staff is trained to assist in case of any sensory overload.",
+    "date": "2023-11-18",
+    "start_at": "10:30 AM",
+    "duration": "2 hours",
+    "collborate_type": "Parent_assisted",
+    "cost": "Free with museum admission ($13 per person, members free)",
+    "contact_person": "Sara Allen",
+    "contact_number": "555-0123"
+}

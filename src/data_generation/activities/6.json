@@ -1,0 +1,38 @@
+{
+    "activity_name": "Sensory-Friendly Gardening Workshop",
+    "Activity_format": "Off-line",
+    "Website": "",
+    "city": "Seattle",
+    "venue": "Seattle Children's PlayGarden, 1745 24th Ave S, Seattle, WA 98144",
+    "age_range": [
+        4,
+        12
+    ],
+    "skills_required": [
+        "Basic gardening",
+        "Simple instructions following"
+    ],
+    "sensory_avoid": [
+        "Loud noises"
+    ],
+    "materials_to_prepare": [
+        "Gardening gloves",
+        "Sunhat",
+        "Comfortable clothing"
+    ],
+    "steps": [
+        "Introduction and explanation of the gardening activity.",
+        "Distribution of gardening tools and materials.",
+        "Guided planting of flowers and vegetables.",
+        "Watering plants and learning about plant care.",
+        "Wrap up with a sensory activity like making a mud pie."
+    ],
+    "safety": "Ensure children wear sun protection and stay hydrated. Adult supervision is required at all times.",
+    "date": "2023-11-15",
+    "start_at": "10:00 AM",
+    "duration": "2 hours",
+    "collborate_type": "Parent_assisted",
+    "cost": "Free",
+    "contact_person": "Emily Rogers",
+    "contact_number": "(206) 123-4567"
+}

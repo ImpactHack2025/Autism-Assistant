@@ -1,0 +1,25 @@
+{
+    "name": "Lucas Johnson",
+    "age": 8,
+    "gender": "Male",
+    "language_preference": "English",
+    "city": "San Diego",
+    "interests": [
+        "Dinosaurs",
+        "Ocean life",
+        "Space exploration"
+    ],
+    "preferred_sensory": "Visual",
+    "communication_level": "Limited verbal communication",
+    "communication_method": "Picture Exchange Communication System (PECS)",
+    "time_preference": [
+        "Morning",
+        "Early afternoon"
+    ],
+    "Allergens": [
+        "Peanuts",
+        "Shellfish"
+    ],
+    "emergency_contact_name": "Emily Johnson",
+    "emergency_contact_number": "(619) 555-0134"
+}

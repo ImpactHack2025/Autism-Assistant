@@ -1,0 +1,38 @@
+{
+    "activity_name": "Sensory Exploration Art Class",
+    "Activity_format": "Off-line",
+    "Website": "",
+    "city": "Seattle",
+    "venue": "Art Studio, 123 Creative Avenue, Seattle, WA",
+    "age_range": [
+        6,
+        12
+    ],
+    "skills_required": [
+        "Basic motor skills",
+        "Ability to follow simple instructions"
+    ],
+    "sensory_avoid": [
+        "Loud noises"
+    ],
+    "materials_to_prepare": [
+        "Apron",
+        "Water bottle"
+    ],
+    "steps": [
+        "Arrive at the venue 10 minutes early for registration.",
+        "Meet the instructor and other participants in the studio.",
+        "Watch a brief demonstration on different textures and materials.",
+        "Start creating art with clay, paints, and textured paper.",
+        "Take breaks as needed, explore different textures, and ask questions.",
+        "Conclude the session with a group reflection on creations."
+    ],
+    "safety": "Ensure children are not allergic to any materials and use non-toxic substances only.",
+    "date": "2023-11-15",
+    "start_at": "10:00 AM",
+    "duration": "1.5 Hours",
+    "collborate_type": "Group-based",
+    "cost": "$20 per child",
+    "contact_person": "Lisa Brown",
+    "contact_number": "(206) 555-1234"
+}

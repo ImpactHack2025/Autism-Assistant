@@ -1,0 +1,37 @@
+{
+    "activity_name": "Sensory Garden Exploration",
+    "Activity_format": "Off-line",
+    "Website": "",
+    "city": "Portland",
+    "venue": "Portland Children's Museum, 4015 SW Canyon Rd",
+    "age_range": [
+        5,
+        12
+    ],
+    "skills_required": [
+        "walking",
+        "basic communication"
+    ],
+    "sensory_avoid": [
+        "loud noises",
+        "strong smells"
+    ],
+    "materials_to_prepare": [
+        "sun hat",
+        "water bottle"
+    ],
+    "steps": [
+        "Arrive at the Portland Children's Museum.",
+        "Head to the Sensory Garden located at the premises.",
+        "Explore different textures, colors, and smells in the garden.",
+        "Participate in a guided session by a sensory therapist at 11:00 AM."
+    ],
+    "safety": "Ensure children are wearing comfortable shoes and are supervised at all times.",
+    "date": "2023-11-12",
+    "start_at": "10:00 AM",
+    "duration": "2 hours",
+    "collborate_type": "Parent_assisted",
+    "cost": "$10 per child",
+    "contact_person": "Jessica H.",
+    "contact_number": "123-456-7890"
+}

@@ -1,0 +1,38 @@
+{
+    "activity_name": "Creative Music Sensory Workshop",
+    "Activity_format": "Off-line",
+    "Website": "",
+    "city": "Seattle",
+    "venue": "Seattle Center - Armory Loft 3, 305 Harrison St, Seattle, WA 98109",
+    "age_range": [
+        5,
+        12
+    ],
+    "skills_required": [
+        "None"
+    ],
+    "sensory_avoid": [
+        "Loud Noises"
+    ],
+    "materials_to_prepare": [
+        "Comfortable clothing",
+        "Water bottle",
+        "Ear defenders (if needed)"
+    ],
+    "steps": [
+        "Arrival and registration at the venue.",
+        "Introduction to musical instruments.",
+        "Interactive group activity to create music.",
+        "Individual exploration time with instruments.",
+        "Sensory-friendly break with soft music and visuals.",
+        "Closing circle and feedback session."
+    ],
+    "safety": "The workshop is designed in a sensory-friendly manner, with sound levels carefully controlled.",
+    "date": "2023-12-15",
+    "start_at": "10:00",
+    "duration": "2 hours",
+    "collborate_type": "Group-based",
+    "cost": "$10 per child",
+    "contact_person": "Amy Johnson",
+    "contact_number": "1-206-555-0198"
+}

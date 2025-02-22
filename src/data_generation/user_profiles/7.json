@@ -1,0 +1,24 @@
+{
+    "name": "Liam Turner",
+    "age": 10,
+    "gender": "Male",
+    "language_preference": "English",
+    "city": "Vancouver",
+    "interests": [
+        "trains",
+        "drawing",
+        "puzzles"
+    ],
+    "preferred_sensory": "Soft textures",
+    "communication_level": "Limited verbal",
+    "communication_method": "Picture Exchange Communication System (PECS)",
+    "time_preference": [
+        "Morning",
+        "Early Afternoon"
+    ],
+    "Allergens": [
+        "Peanuts"
+    ],
+    "emergency_contact_name": "Sarah Turner",
+    "emergency_contact_number": "555-7824"
+}

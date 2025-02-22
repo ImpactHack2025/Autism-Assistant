@@ -1,0 +1,26 @@
+{
+    "name": "Lucas Johnson",
+    "age": 9,
+    "gender": "Male",
+    "language_preference": "English",
+    "city": "Austin",
+    "interests": [
+        "trains",
+        "animals",
+        "puzzles",
+        "playing with sand"
+    ],
+    "preferred_sensory": "Visual",
+    "communication_level": "Moderate",
+    "communication_method": "PECS (Picture Exchange Communication System)",
+    "time_preference": [
+        "morning",
+        "early afternoon"
+    ],
+    "Allergens": [
+        "peanuts",
+        "dairy"
+    ],
+    "emergency_contact_name": "Emily Johnson",
+    "emergency_contact_number": "555-987-6543"
+}

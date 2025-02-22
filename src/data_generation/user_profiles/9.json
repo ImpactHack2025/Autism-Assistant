@@ -1,0 +1,26 @@
+{
+    "name": "Lucas Martin",
+    "age": 10,
+    "gender": "Male",
+    "language_preference": "English",
+    "city": "Seattle",
+    "interests": [
+        "Building blocks",
+        "Space exploration",
+        "Dinosaurs",
+        "Puzzle games"
+    ],
+    "preferred_sensory": "Visual",
+    "communication_level": "Moderate",
+    "communication_method": "Picture Exchange Communication System (PECS)",
+    "time_preference": [
+        "Morning",
+        "Afternoon"
+    ],
+    "Allergens": [
+        "Peanuts",
+        "Eggs"
+    ],
+    "emergency_contact_name": "Emily Martin",
+    "emergency_contact_number": "+1-206-555-1234"
+}
