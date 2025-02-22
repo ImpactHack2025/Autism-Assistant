@@ -1,0 +1,26 @@
+{
+    "name": "Oliver Johnson",
+    "age": 8,
+    "gender": "Male",
+    "language_preference": "English",
+    "city": "Chicago",
+    "interests": [
+        "trains",
+        "puzzle games",
+        "animals",
+        "drawing"
+    ],
+    "preferred_sensory": "Soft fabrics",
+    "communication_level": "Moderate",
+    "communication_method": "Picture Exchange Communication System (PECS)",
+    "time_preference": [
+        "Afternoon",
+        "Evening"
+    ],
+    "Allergens": [
+        "Peanuts",
+        "Dairy"
+    ],
+    "emergency_contact_name": "Emily Johnson",
+    "emergency_contact_number": "555-123-4567"
+}

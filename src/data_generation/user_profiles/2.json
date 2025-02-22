@@ -1,0 +1,25 @@
+{
+    "name": "Oliver Thompson",
+    "age": 8,
+    "gender": "Male",
+    "language_preference": "English",
+    "city": "Austin",
+    "interests": [
+        "Drawing",
+        "Trains",
+        "Building Blocks"
+    ],
+    "preferred_sensory": "Visual",
+    "communication_level": "Moderate",
+    "communication_method": "PECS (Picture Exchange Communication System)",
+    "time_preference": [
+        "Morning",
+        "Afternoon"
+    ],
+    "Allergens": [
+        "Peanuts",
+        "Gluten"
+    ],
+    "emergency_contact_name": "Sarah Thompson",
+    "emergency_contact_number": "555-0134"
+}

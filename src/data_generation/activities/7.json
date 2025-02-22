@@ -1,0 +1,43 @@
+{
+    "activity_name": "Virtual Art Class: Exploring Colors",
+    "Activity_format": "Online",
+    "Website": "https://www.artforkids.com/exploring-colors",
+    "city": "",
+    "venue": "",
+    "age_range": [
+        5,
+        12
+    ],
+    "skills_required": [
+        "Basic understanding of colors",
+        "Computer operation"
+    ],
+    "sensory_avoid": [
+        "Bright flashing colors"
+    ],
+    "materials_to_prepare": [
+        "Watercolors",
+        "Paintbrushes",
+        "Thick paper",
+        "Water cup",
+        "Palette",
+        "Napkins"
+    ],
+    "steps": [
+        "Log into the virtual session 10 minutes before the start time using the link provided.",
+        "Gather all the materials in an orderly fashion on your workspace.",
+        "Listen to the instructor as they explain different water coloring techniques.",
+        "Try out the techniques as demonstrated on your paper.",
+        "Ask questions or requests assistance via the chat or audio feature during breaks.",
+        "Participate in the group sharing where children can showcase their work.",
+        "End with a quick feedback session."
+    ],
+    "safety": "Ensure children do not ingest or have prolonged skin contact with paints. Keep water away from electronics.",
+    "date": "2023-11-15",
+    "start_at": "4:00 PM",
+    "duration": "1 hour",
+    "collborate_type": "Independent",
+    "cost": "Free",
+    "contact_person": "Sophia Carter",
+    "contact_number": "+1 234-567-8901"
+}

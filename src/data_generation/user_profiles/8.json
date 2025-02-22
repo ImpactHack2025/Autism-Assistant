@@ -1,0 +1,26 @@
+{
+    "name": "Liam Anderson",
+    "age": 10,
+    "gender": "Male",
+    "language_preference": "English",
+    "city": "Austin",
+    "interests": [
+        "Trains",
+        "Puzzles",
+        "Drawing",
+        "Reading Books"
+    ],
+    "preferred_sensory": "Soft Fabrics",
+    "communication_level": "Verbal",
+    "communication_method": "Short Sentences",
+    "time_preference": [
+        "Morning",
+        "Afternoon"
+    ],
+    "Allergens": [
+        "Peanuts",
+        "Soy"
+    ],
+    "emergency_contact_name": "Sarah Anderson",
+    "emergency_contact_number": "555-234-5678"
+}

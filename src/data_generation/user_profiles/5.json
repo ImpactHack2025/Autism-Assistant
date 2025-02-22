@@ -1,0 +1,26 @@
+{
+    "name": "Liam Jensen",
+    "age": 8,
+    "gender": "Male",
+    "language_preference": "English",
+    "city": "Austin",
+    "interests": [
+        "puzzle games",
+        "drawing",
+        "outer space",
+        "dinosaurs"
+    ],
+    "preferred_sensory": "soft textures",
+    "communication_level": "Limited verbal communication",
+    "communication_method": "Picture Exchange Communication System (PECS)",
+    "time_preference": [
+        "morning",
+        "early afternoon"
+    ],
+    "Allergens": [
+        "peanuts",
+        "dairy"
+    ],
+    "emergency_contact_name": "Emily Jensen",
+    "emergency_contact_number": "555-283-9450"
+}

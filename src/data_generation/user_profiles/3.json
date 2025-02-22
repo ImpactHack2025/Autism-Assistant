@@ -1,0 +1,26 @@
+{
+    "name": "Oliver Smith",
+    "age": 10,
+    "gender": "Male",
+    "language_preference": "English",
+    "city": "Boston",
+    "interests": [
+        "Trains",
+        "Puzzles",
+        "Dinosaurs",
+        "Drawing"
+    ],
+    "preferred_sensory": "Tactile",
+    "communication_level": "Limited Verbal",
+    "communication_method": "Picture Exchange Communication System (PECS)",
+    "time_preference": [
+        "Morning",
+        "Afternoon"
+    ],
+    "Allergens": [
+        "Peanuts",
+        "Dairy"
+    ],
+    "emergency_contact_name": "Emma Smith",
+    "emergency_contact_number": "+1-617-555-0147"
+}

@@ -1,0 +1,38 @@
+{
+    "activity_name": "Interactive Storytelling Session",
+    "Activity_format": "Off-line",
+    "Website": "",
+    "venue": "Sunnyvale Community Center, 550 E. Remington Drive, Sunnyvale, CA 94087",
+    "age_range": [
+        5,
+        12
+    ],
+    "skills_required": [
+        "Basic comprehension",
+        "Listening",
+        "Engagement in group activity"
+    ],
+    "sensory_avoid": [
+        "Loud noises"
+    ],
+    "materials_to_prepare": [
+        "Favorite storybook (optional)",
+        "Comfortable seating cushion"
+    ],
+    "steps": [
+        "Arrive at the Sunnyvale Community Center by 10:00 AM.",
+        "Children gather in the storytelling circle.",
+        "A warm-up activity to get acquainted with the theme of the story.",
+        "Interactive storytelling session begins, with pauses for group interaction.",
+        "Encourage children to share their thoughts and feelings during the story.",
+        "Conclude with a short relaxation exercise."
+    ],
+    "safety": "Ensure children have name tags and caregivers are present.",
+    "date": "2023-11-15",
+    "start_at": "10:00 AM",
+    "duration": "1 hour",
+    "collborate_type": "Group-based",
+    "cost": "Free",
+    "contact_person": "Sarah Nguyen",
+    "contact_number": "(555) 234-5678"
+}

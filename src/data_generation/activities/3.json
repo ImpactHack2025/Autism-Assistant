@@ -1,0 +1,37 @@
+{
+    "activity_name": "Sensory Play Day",
+    "Activity_format": "Off-line",
+    "Website": "",
+    "city": "Boston",
+    "venue": "Boston Children's Museum, 308 Congress St, Boston, MA 02210",
+    "age_range": [
+        4,
+        10
+    ],
+    "skills_required": [
+        "None"
+    ],
+    "sensory_avoid": [
+        "Loud noises"
+    ],
+    "materials_to_prepare": [
+        "Comfortable clothing",
+        "Water bottle"
+    ],
+    "steps": [
+        "Arrival and registration at the entrance",
+        "Introduction session for kids and parents",
+        "Free play at various sensory stations",
+        "Guided group activity in the sensory garden",
+        "Cool down and snack time",
+        "Feedback session with parents"
+    ],
+    "safety": "Parents must stay with their children throughout the day. Please inform staff of any allergies or specific requirements.",
+    "date": "2023-11-25",
+    "start_at": "10:00 AM",
+    "duration": "4 hours",
+    "collborate_type": "Parent_assisted",
+    "cost": "$10 per child",
+    "contact_person": "Sarah Thompson",
+    "contact_number": "617-555-0198"
+}

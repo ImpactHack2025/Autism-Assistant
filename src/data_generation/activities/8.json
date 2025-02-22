@@ -1,0 +1,37 @@
+{
+    "activity_name": "Sensory Friendly Movie Night",
+    "Activity_format": "Off-line",
+    "Website": "",
+    "city": "San Francisco",
+    "venue": "AMC Metreon 16, 135 4th St #3000, San Francisco, CA 94103",
+    "age_range": [
+        3,
+        12
+    ],
+    "skills_required": [
+        "Visual Processing",
+        "Following Instructions"
+    ],
+    "sensory_avoid": [
+        "Loud Noises"
+    ],
+    "materials_to_prepare": [
+        "Comfortable cushion or blanket",
+        "Noise-cancelling headphones if needed"
+    ],
+    "steps": [
+        "Arrive at the AMC Metreon 16 at least 15 minutes before the movie starts.",
+        "Present your ticket at the entrance.",
+        "Find a comfortable seat for your child and set up their cushion or blanket.",
+        "Ensure your child is comfortable and provide noise-cancelling headphones if needed.",
+        "Enjoy the movie in an environment tailored for sensory needs."
+    ],
+    "safety": "Ensure that all exits are familiar, and keep personal belongings secure.",
+    "date": "2023-11-15",
+    "start_at": "14:00",
+    "duration": "2 hours",
+    "collborate_type": "Parent_assisted",
+    "cost": "$10 per ticket",
+    "contact_person": "Jessica Lee",
+    "contact_number": "408-555-1943"
+}

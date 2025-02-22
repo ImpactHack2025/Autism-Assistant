@@ -1,0 +1,38 @@
+{
+    "activity_name": "Interactive Storytelling Hour",
+    "Activity_format": "Off-line",
+    "Website": "",
+    "city": "San Francisco",
+    "venue": "Autism Family Network Center, 123 Autism Lane, San Francisco, CA 94103",
+    "age_range": [
+        5,
+        10
+    ],
+    "skills_required": [
+        "Listening",
+        "Basic Communication"
+    ],
+    "sensory_avoid": [
+        "Loud Noises"
+    ],
+    "materials_to_prepare": [
+        "Comfortable seating arrangements",
+        "Interactive storybooks"
+    ],
+    "steps": [
+        "Welcome the children with a friendly greeting.",
+        "Guide them to the seating area and provide a brief introduction to the activity.",
+        "Begin the storytelling session with simple, engaging stories.",
+        "Encourage children to participate by asking questions about the story.",
+        "Provide sensory breaks if any child feels overwhelmed.",
+        "End the session with a short game related to the story."
+    ],
+    "safety": "Ensure the room is free from any sharp objects and maintain a calm environment to avoid sensory overload.",
+    "date": "2023-11-25",
+    "start_at": "10:00 AM",
+    "duration": "1 hour",
+    "collborate_type": "Parent_assisted",
+    "cost": "Free",
+    "contact_person": "Jane Doe",
+    "contact_number": "555-0198"
+}

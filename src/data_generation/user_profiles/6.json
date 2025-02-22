@@ -1,0 +1,26 @@
+{
+    "name": "Ethan Bell",
+    "age": 7,
+    "gender": "Male",
+    "language_preference": "English",
+    "city": "Austin",
+    "interests": [
+        "Building Blocks",
+        "Trains",
+        "Dinosaurs",
+        "Drawing"
+    ],
+    "preferred_sensory": "Auditory",
+    "communication_level": "Moderate",
+    "communication_method": "Visual Aids",
+    "time_preference": [
+        "Morning Playtime",
+        "Afternoon Quiet Hours"
+    ],
+    "Allergens": [
+        "Peanuts",
+        "Eggs"
+    ],
+    "emergency_contact_name": "Sarah Bell",
+    "emergency_contact_number": "555-0123-456"
+}
