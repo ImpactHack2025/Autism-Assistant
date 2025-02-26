@@ -36,12 +36,22 @@
             background-color: #ffd700;
             cursor: pointer;
         }
+        .language-select {
+            margin-top: 20px;
+        }
     </style>
 </head>
 <body>
     <div class="container">
         <h1>Welcome!</h1>
         <p id="message">Click a button to hear the text.</p>
+        
+        <label for="language">Select Language:</label>
+        <select id="language" onchange="changeLanguage()">
+            <option value="en-US">English</option>
+            <option value="so-SO">Somali</option>
+            <option value="fa-IR">Persian</option>
+        </select>
         
         <button class="btn calm" onclick="speakText('I feel calm')">Calm</button>
         <button class="btn focus" onclick="speakText('I need focus')">Focus</button>
@@ -64,15 +74,21 @@
     </div>
 
     <script>
+        let selectedLanguage = 'en-US';
+        
         function speakText(text) {
             let speech = new SpeechSynthesisUtterance(text);
-            speech.lang = 'en-US';
+            speech.lang = selectedLanguage;
             speech.rate = 0.8;
             window.speechSynthesis.speak(speech);
         }
 
         function toggleDarkMode() {
             document.body.classList.toggle('dark-mode');
+        }
+
+        function changeLanguage() {
+            selectedLanguage = document.getElementById('language').value;
         }
     </script>
 </body>
