@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Autism Assistant</title>
+    <title>Autism-Friendly Interface</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -25,7 +25,17 @@
         .calm { background-color: #a2d2ff; }
         .focus { background-color: #ffafcc; }
         .dark-mode { background-color: #2b2b2b; color: white; }
-        
+        .schedule, .emotions {
+            margin-top: 20px;
+        }
+        .schedule-item, .emotion-item {
+            display: inline-block;
+            margin: 10px;
+            padding: 10px;
+            border-radius: 10px;
+            background-color: #ffd700;
+            cursor: pointer;
+        }
     </style>
 </head>
 <body>
@@ -36,6 +46,21 @@
         <button class="btn calm" onclick="speakText('I feel calm')">Calm</button>
         <button class="btn focus" onclick="speakText('I need focus')">Focus</button>
         <button class="btn" onclick="toggleDarkMode()">Toggle Dark Mode</button>
+        <br>
+        
+        <div class="schedule">
+            <h2>Daily Schedule</h2>
+            <div class="schedule-item" onclick="speakText('Time for breakfast')">🍽️ Breakfast</div>
+            <div class="schedule-item" onclick="speakText('Time to play')">🎮 Playtime</div>
+            <div class="schedule-item" onclick="speakText('Time to rest')">🛏️ Nap Time</div>
+        </div>
+        
+        <div class="emotions">
+            <h2>How Do You Feel?</h2>
+            <div class="emotion-item" onclick="speakText('I am happy')">😊 Happy</div>
+            <div class="emotion-item" onclick="speakText('I am sad')">😢 Sad</div>
+            <div class="emotion-item" onclick="speakText('I am excited')">😃 Excited</div>
+        </div>
     </div>
 
     <script>
