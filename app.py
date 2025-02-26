@@ -10,12 +10,13 @@ def get_recommendations(diagnosis, age, interests, needs, language):
     and consider accessibility and available community resources.
     """
     
-    response = openai.ChatCompletion.create(
+    client = openai.OpenAI()
+    response = client.chat.completions.create(
         model="gpt-4",
         messages=[{"role": "system", "content": "You are an inclusive AI assistant."},
                   {"role": "user", "content": prompt}]
     )
-    recommendations = response["choices"][0]["message"]["content"]
+    recommendations = response.choices[0].message.content
     
     if language != "English":
         translator = Translator()
