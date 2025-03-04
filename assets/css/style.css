@@ -33,6 +33,7 @@ body {
 .schedule, .emotions {
     margin-top: 20px;
 }
+
 .schedule-item, .emotion-item {
     display: inline-block;
     margin: 10px;
@@ -41,6 +42,7 @@ body {
     background-color: #ffd700;
     cursor: pointer;
 }
+
 .language-select {
     margin-top: 20px;
 }
