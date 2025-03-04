@@ -18,6 +18,15 @@ body {
     border-radius: 10px;
 }
 
+.btn-success {
+    background-color: #32cd32;
+    color: white;
+}
+
+.btn-success:hover {
+    background-color: #228b22;
+}
+
 .calm { 
     background-color: #a2d2ff; 
 }
