@@ -4,45 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Autism-Friendly Interface</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            text-align: center;
-            background-color: #f0f8ff;
-            transition: background 0.3s;
-        }
-        .container {
-            padding: 20px;
-        }
-        .btn {
-            font-size: 20px;
-            padding: 15px;
-            margin: 10px;
-            border: none;
-            cursor: pointer;
-            border-radius: 10px;
-        }
-        .calm { background-color: #a2d2ff; }
-        .focus { background-color: #ffafcc; }
-        .dark-mode { background-color: #2b2b2b; color: white; }
-        .schedule, .emotions {
-            margin-top: 20px;
-        }
-        .schedule-item, .emotion-item {
-            display: inline-block;
-            margin: 10px;
-            padding: 10px;
-            border-radius: 10px;
-            background-color: #ffd700;
-            cursor: pointer;
-        }
-        .language-select {
-            margin-top: 20px;
-        }
-    </style>
+    <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
     <div class="container">
+        <div class="auth-buttons">
+            <button class="btn" onclick="signUp()">Sign Up</button>
+            <button class="btn" onclick="register()">Register</button>
+        </div>
         <h1 id="welcome-text">Welcome to your Autism Assistant!</h1>
         <p id="message">Click a button to hear the text.</p>
         
@@ -146,6 +115,14 @@
             document.getElementById('happy').innerText = "😊 " + translations[selectedLanguage].happy;
             document.getElementById('sad').innerText = "😢 " + translations[selectedLanguage].sad;
             document.getElementById('excited').innerText = "😃 " + translations[selectedLanguage].excited;
+        }
+
+        function signUp() {
+            alert('Sign Up button clicked');
+        }
+
+        function register() {
+            alert('Register button clicked');
         }
     </script>
 </body>
