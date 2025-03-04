@@ -10,6 +10,8 @@ def get_recommendations(diagnosis, age, interests, needs, language):
     and consider accessibility and available community resources.
     """
     
+    openai.api_key = "your-api-key-here"
+    
     client = openai.OpenAI()
     response = client.chat.completions.create(
         model="gpt-4",
@@ -35,14 +37,17 @@ interests = st.sidebar.text_area("Interests", "Music, Sports, Art, etc.")
 needs = st.sidebar.text_area("Specific Needs", "Wheelchair accessible, sensory-friendly, etc.")
 language = st.sidebar.selectbox("Preferred Language", ["English", "Somali", "Persian"])
 
+# Initialize recommendations as an empty string
+recommendations = ""
+
 if st.sidebar.button("Find Activities & Support"):
     with st.spinner("Finding the best recommendations..."):
         recommendations = get_recommendations(diagnosis, age, interests, needs, language)
         st.subheader("Personalized Recommendations:")
         st.write(recommendations)
 
-# Accessibility Features
-if st.checkbox("Enable Text-to-Speech"):
+# Accessibility Features (Only show if recommendations exist)
+if recommendations and st.checkbox("Enable Text-to-Speech"):
     st.write("Click below to hear the recommendations:")
     st.audio("https://translate.google.com/translate_tts?ie=UTF-8&q=" + recommendations + "&tl=" + language.lower() + "&client=tw-ob")
 
