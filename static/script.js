@@ -94,7 +94,6 @@ function speakText(key) {
     speechSynthesis.speak(utterance);
 }
 
-
 function toggleDarkMode() {
     document.body.classList.toggle('dark-mode');
 }
