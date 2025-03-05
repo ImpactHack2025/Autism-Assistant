@@ -72,13 +72,28 @@ function changeLanguage() {
     });
 }
 
-
 function speakText(key) {
-    let speech = new SpeechSynthesisUtterance(translations[selectedLanguage][key]);
-    speech.lang = selectedLanguage === 'fa' ? 'fa-IR' : selectedLanguage === 'so' ? 'so-SO' : 'en-US';
-    speech.rate = 0.8;
-    window.speechSynthesis.speak(speech);
+    const selectedLang = document.getElementById("language").value;
+    const translation = translations[selectedLang];
+
+    if (!translation || !translation[key]) {
+        console.warn("Translation not found for:", key);
+        return;
+    }
+
+    let textToSpeak = translation[key];
+
+    // Remove emojis and symbols
+    textToSpeak = textToSpeak.replace(/[\p{Emoji_Presentation}\p{Extended_Pictographic}]/gu, "").trim();
+
+    const utterance = new SpeechSynthesisUtterance(textToSpeak);
+
+    // Set language for speech synthesis
+    utterance.lang = selectedLang === "so" ? "so-SO" : selectedLang === "fa" ? "fa-IR" : "en-US";
+
+    speechSynthesis.speak(utterance);
 }
+
 
 function toggleDarkMode() {
     document.body.classList.toggle('dark-mode');

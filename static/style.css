@@ -55,16 +55,13 @@ body {
     font-weight: bold;
 }
 
-.calm:hover {
-    background-color: #228b22;
-}
-
 #calm-btn {
     background-color: aqua;
 }
 
-.focus { 
-    background-color: #ffafcc; 
+.focus, .calm { 
+    background-color: #ffafcc;
+    font-size: 30px;
 }
 
 .dark-mode { 
