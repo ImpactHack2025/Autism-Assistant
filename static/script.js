@@ -1,49 +1,77 @@
 let selectedLanguage = 'en';
         
 const translations = {
-    en: {
-        welcome: "Welcome!",
-        message: "Click a button to hear the text.",
-        calm: "I feel calm",
-        focus: "I need focus",
-        schedule: "Daily Schedule",
-        breakfast: "Time for breakfast",
-        playtime: "Time to play",
-        nap: "Time to rest",
-        emotions: "How Do You Feel?",
-        happy: "I am happy",
-        sad: "I am sad",
-        excited: "I am excited"
+    "so": { // Somali
+        "welcome-text": "Ku soo dhawoow Kaaliyahaaga Autism!",
+        "visit-site": "Booqo Mitt Speciella Barn si aad wax badan uga ogaato!",
+        "signup-signin": "Saxiix / Gal",
+        "message": "Guji badhanka si aad u maqasho qoraalka!",
+        "select-language": "Dooro Luuqadda:",
+        "calm-btn": "Dajin",
+        "focus-btn": "Diirad saar",
+        "toggle-dark": "Beddel Habka Mugdiga",
+        "schedule-title": "Jadwalka Maalinlaha ah",
+        "breakfast": "🍽️ Quraac",
+        "playtime": "🎮 Waqti Ciyaar",
+        "nap": "🛏️ Hurdo",
+        "emotion-title": "Sidee Dareemaysaa?",
+        "happy": "😊 Faraxsan",
+        "sad": "😢 Murugaysan",
+        "excited": "😃 Waan Faraxsanahay"
     },
-    so: {
-        welcome: "Soo Dhawoow!",
-        message: "Guji badhanka si aad u maqasho qoraalka.",
-        calm: "Waan deganahay",
-        focus: "Waxaan u baahanahay feejignaan",
-        schedule: "Jadwal Maalinle ah",
-        breakfast: "Waqtiga quraacda",
-        playtime: "Waqtiga ciyaarta",
-        nap: "Waqtiga nasashada",
-        emotions: "Sidee dareemaysaa?",
-        happy: "Waan faraxsanahay",
-        sad: "Waan murugaysanahay",
-        excited: "Waan xiisay"
+    "fa": { // Persian
+        "welcome-text": "به دستیار اوتیسم خود خوش آمدید!",
+        "visit-site": "برای کسب اطلاعات بیشتر از Mitt Speciella Barn دیدن کنید!",
+        "signup-signin": "ثبت نام / ورود",
+        "message": "روی یک دکمه کلیک کنید تا متن را بشنوید!",
+        "select-language": "زبان را انتخاب کنید:",
+        "calm-btn": "آرامش",
+        "focus-btn": "تمرکز",
+        "toggle-dark": "حالت تاریک را تغییر دهید",
+        "schedule-title": "برنامه روزانه",
+        "breakfast": "🍽️ صبحانه",
+        "playtime": "🎮 زمان بازی",
+        "nap": "🛏️ چرت زدن",
+        "emotion-title": "احساس شما چگونه است؟",
+        "happy": "😊 خوشحال",
+        "sad": "😢 ناراحت",
+        "excited": "😃 هیجان زده"
     },
-    fa: {
-        welcome: "خوش آمدید!",
-        message: "برای شنیدن متن، روی یک دکمه کلیک کنید.",
-        calm: "من آرام هستم",
-        focus: "من نیاز به تمرکز دارم",
-        schedule: "برنامه روزانه",
-        breakfast: "زمان صبحانه",
-        playtime: "زمان بازی",
-        nap: "زمان استراحت",
-        emotions: "احساس شما چیست؟",
-        happy: "من خوشحالم",
-        sad: "من ناراحتم",
-        excited: "من هیجان زده هستم"
+    "en": { // English (Default)
+        "welcome-text": "Welcome to your Autism Assistant!",
+        "visit-site": "Visit Mitt Speciella Barn to learn more about their vision!",
+        "signup-signin": "Sign Up / Sign In",
+        "message": "Click a button to hear the text!",
+        "select-language": "Select Language:",
+        "calm-btn": "Calm",
+        "focus-btn": "Focus",
+        "toggle-dark": "Toggle Dark Mode",
+        "schedule-title": "Daily Schedule",
+        "breakfast": "🍽️ Breakfast",
+        "playtime": "🎮 Playtime",
+        "nap": "🛏️ Nap Time",
+        "emotion-title": "How Do You Feel?",
+        "happy": "😊 Happy",
+        "sad": "😢 Sad",
+        "excited": "😃 Excited"
     }
 };
+
+function changeLanguage() {
+    const selectedLang = document.getElementById("language").value;
+    const translation = translations[selectedLang];
+
+    if (!translation) return;
+
+    // Loop through all elements with the `data-i18n` attribute
+    document.querySelectorAll("[data-i18n]").forEach(element => {
+        const key = element.getAttribute("data-i18n");
+        if (translation[key]) {
+            element.innerText = translation[key];
+        }
+    });
+}
+
 
 function speakText(key) {
     let speech = new SpeechSynthesisUtterance(translations[selectedLanguage][key]);
@@ -54,22 +82,6 @@ function speakText(key) {
 
 function toggleDarkMode() {
     document.body.classList.toggle('dark-mode');
-}
-
-function changeLanguage() {
-    selectedLanguage = document.getElementById('language').value;
-    document.getElementById('welcome-text').innerText = translations[selectedLanguage].welcome;
-    document.getElementById('message').innerText = translations[selectedLanguage].message;
-    document.getElementById('calm-btn').innerText = translations[selectedLanguage].calm;
-    document.getElementById('focus-btn').innerText = translations[selectedLanguage].focus;
-    document.getElementById('schedule-title').innerText = translations[selectedLanguage].schedule;
-    document.getElementById('breakfast').innerText = "🍽️ " + translations[selectedLanguage].breakfast;
-    document.getElementById('playtime').innerText = "🎮 " + translations[selectedLanguage].playtime;
-    document.getElementById('nap').innerText = "🛏️ " + translations[selectedLanguage].nap;
-    document.getElementById('emotion-title').innerText = translations[selectedLanguage].emotions;
-    document.getElementById('happy').innerText = "😊 " + translations[selectedLanguage].happy;
-    document.getElementById('sad').innerText = "😢 " + translations[selectedLanguage].sad;
-    document.getElementById('excited').innerText = "😃 " + translations[selectedLanguage].excited;
 }
 
 function signUp() {

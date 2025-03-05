@@ -8,44 +8,43 @@
     <script src="{{ url_for('static', filename='script.js') }}" defer></script>
 </head>
 <body>
-    <div class=container>
-        <h1 id="welcome-text">Welcome to your Autism Assistant!</h1>
+    <div class="container">
+        <h1 data-i18n="welcome-text">Welcome to your Autism Assistant!</h1>
     </div>
     <a href="https://mittspeciellabarn.se/" target="_blank">
-        <button class="custom-button">Visit Mitt Speciella Barn to learn more about their vision!</button>
+        <button class="custom-button" data-i18n="visit-site">Visit Mitt Speciella Barn to learn more about their vision!</button>
     </a>
 
     <div class="container buttons-container">
         <div class="auth-buttons">
-            <button class="btn btn-success">Sign Up / Sign In</button>
+            <button class="btn btn-success" data-i18n="signup-signin">Sign Up / Sign In</button>
         </div>
 
-        <p id="message">Click a button to hear the text!</p>
- 
-        <label for="language">Select Language:</label>
+        <p data-i18n="message">Click a button to hear the text!</p>
+
+        <label for="language" data-i18n="select-language">Select Language:</label>
         <select id="language" onchange="changeLanguage()">
             <option value="en">English</option>
             <option value="so">Somali</option>
             <option value="fa">Persian</option>
         </select>
         
-        <button class="btn calm" onclick="speakText('calm')" id="calm-btn">Calm</button>
-        <button class="btn focus" onclick="speakText('focus')" id="focus-btn">Focus</button>
-        <button class="btn" onclick="toggleDarkMode()">Toggle Dark Mode</button>
-        <br>
+        <button class="btn calm" onclick="speakText('calm')" data-i18n="calm-btn">Calm</button>
+        <button class="btn focus" onclick="speakText('focus')" data-i18n="focus-btn">Focus</button>
+        <button class="btn" onclick="toggleDarkMode()" data-i18n="toggle-dark">Toggle Dark Mode</button>
         
         <div class="schedule">
-            <h2 id="schedule-title">Daily Schedule</h2>
-            <div class="schedule-item" onclick="speakText('breakfast')" id="breakfast">🍽️ Breakfast</div>
-            <div class="schedule-item" onclick="speakText('playtime')" id="playtime">🎮 Playtime</div>
-            <div class="schedule-item" onclick="speakText('nap')" id="nap">🛏️ Nap Time</div>
+            <h2 data-i18n="schedule-title">Daily Schedule</h2>
+            <div class="schedule-item" onclick="speakText('breakfast')" data-i18n="breakfast">🍽️ Breakfast</div>
+            <div class="schedule-item" onclick="speakText('playtime')" data-i18n="playtime">🎮 Playtime</div>
+            <div class="schedule-item" onclick="speakText('nap')" data-i18n="nap">🛏️ Nap Time</div>
         </div>
         
         <div class="emotions">
-            <h2 id="emotion-title">How Do You Feel?</h2>
-            <div class="emotion-item" onclick="speakText('happy')" id="happy">😊 Happy</div>
-            <div class="emotion-item" onclick="speakText('sad')" id="sad">😢 Sad</div>
-            <div class="emotion-item" onclick="speakText('excited')" id="excited">😃 Excited</div>
+            <h2 data-i18n="emotion-title">How Do You Feel?</h2>
+            <div class="emotion-item" onclick="speakText('happy')" data-i18n="happy">😊 Happy</div>
+            <div class="emotion-item" onclick="speakText('sad')" data-i18n="sad">😢 Sad</div>
+            <div class="emotion-item" onclick="speakText('excited')" data-i18n="excited">😃 Excited</div>
         </div>
     </div>
 </body>
