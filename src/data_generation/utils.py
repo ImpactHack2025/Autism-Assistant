@@ -7,7 +7,7 @@ from enum import Enum
 
 def get_client():
     # Load the API key from a file
-    with open("../../../API-key", "r") as file:
+    with open("/home/cheli243/Desktop/CodeToGit/profile-generation/API-key", "r") as file:
         content = file.read().strip("\n")
     api_key = content
     if not api_key:
