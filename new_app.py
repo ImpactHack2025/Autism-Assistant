@@ -66,19 +66,24 @@ def recommend_next_activity():
     activities = read_activities(activity_number)
 
     #recommend
-    recommended_activity_index = recommend(user_profile, activities)  
+    recommended_activity_index = int(recommend(user_profile, activities))  
 
-    # print(recommended_activity_index)
+    print(recommended_activity_index)
    
-    #return "text"
+   
 
-    return activities[recommended_activity_index]
+    activity_str = json.dumps(activities[recommended_activity_index], indent=2)
 
-
-
-
+    return activity_str
 
 
+
+
+
+def append_info_to_user():
+    # Your logic for handling user interaction (like button click)
+    print("User liked the recommendation!")
+    return "User liked the recommendation!"
 
 
 
@@ -91,6 +96,11 @@ def home():
 def get_recommendation():
     result = recommend_next_activity()
     return jsonify({'recommendation': result})
+
+@app.route('/append_info', methods=['GET'])
+def append_info():
+    result = append_info_to_user()
+    return jsonify({'message': result})
 
 if __name__ == '__main__':
     app.run(debug=True, host='0.0.0.0', port=5000)
