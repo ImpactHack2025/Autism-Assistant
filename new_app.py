@@ -72,7 +72,7 @@ def recommend_next_activity():
    
     #return "text"
 
-    return recommended_activity_index
+    return activities[recommended_activity_index]
 
 
 
