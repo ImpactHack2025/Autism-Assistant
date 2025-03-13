@@ -14,7 +14,7 @@ def read_activities(activity_numer):
     activity_numer = 5
     for _ in range(activity_numer):
         index=random.randint(file_index_lower_bound, file_index_upper_bound) 
-        file_name = f"/Users/darragh/GitHub repos/Autism-Assistant/src/data_generation/activities/{index}.json"
+        file_name = f"//home/cheli243/Desktop/CodeToGit/forked-data-generation/Autism-Assistant/src/data_generation/activities/{index}.json"
         with open(file_name, 'r') as content_file:
             activities.append(json.load(content_file))
     return activities
@@ -80,9 +80,9 @@ def main():
     # for i in range(profile_numer):
     #     generate_user_profile(client, index=i+1)
 
-    user_profile_file_name="/Users/darragh/GitHub repos/Autism-Assistant/src/data_generation/user_profiles/1.json"
-    with open(user_profile_file_name, 'r') as content_file:
-            user_profile=json.load(content_file)
+    #user_profile_file_name="/Users/darragh/GitHub repos/Autism-Assistant/src/data_generation/user_profiles/1.json"
+    # with open(user_profile_file_name, 'r') as content_file:
+    #         user_profile=json.load(content_file)
 
     recommend_next_activity()
 

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flask Recommend App</title>
+    <script>
+        function getRecommendation() {
+            fetch('/get_recommendation')
+                .then(response => response.json())
+                .then(data => {
+                    document.getElementById('result').innerText = data.recommendation;
+                });
+        }
+    </script>
+</head>
+<body>
+    <h1>Welcome to the Recommendation Page</h1>
+    <button onclick="getRecommendation()">Get Recommendation</button>
+    <p id="result"></p>
+</body>
+</html>
