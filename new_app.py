@@ -1,15 +1,9 @@
-import json
 from flask import Flask, render_template, jsonify
 import random
+import json
 from src.data_generation.utils import get_client
 
 app = Flask(__name__)
-
-# Function to load JSON data
-
-
-local_path = "/home/cheli243/Desktop/CodeToGit/forked-data-generation/Autism-Assistant"
-
 
 def read_activities(activity_numer):
     activities = []
@@ -19,7 +13,7 @@ def read_activities(activity_numer):
     activity_numer = 5
     for _ in range(activity_numer):
         index=random.randint(file_index_lower_bound, file_index_upper_bound) 
-        file_name = f"{local_path}/src/data_generation/activities/{index}.json"
+        file_name = f"//home/cheli243/Desktop/CodeToGit/forked-data-generation/Autism-Assistant/src/data_generation/activities/{index}.json"
         with open(file_name, 'r') as content_file:
             activities.append(json.load(content_file))
     return activities
@@ -67,47 +61,46 @@ def recommend(user_profile,activities):
 
 def recommend_next_activity():
     user_profile={}
-
     #read activities
     activity_number = 5
     activities = read_activities(activity_number)
 
     #recommend
-    recommended_activity_index = recommend(user_profile, activities)  
+    recommended_activity_index = int(recommend(user_profile, activities))  
 
     print(recommended_activity_index)
    
+   
 
-    return recommended_activity_index
+    activity_str = json.dumps(activities[recommended_activity_index], indent=2)
 
-
-@app.route("/recommend", methods=["GET"])
-def get_recommendation():
-    recommended_index = recommend_next_activity()
-    return jsonify({"index": recommended_index})
+    return activity_str
 
 
-def load_json_data(filename):
-    with open(f"src/data_generation/{filename}", "r") as file:
-        return json.load(file)
 
 
-@app.route("/")
+
+def append_info_to_user():
+    # Your logic for handling user interaction (like button click)
+    print("User liked the recommendation!")
+    return "User liked the recommendation!"
+
+
+
+
+@app.route('/')
 def home():
-    return render_template("index.html")
+    return render_template('new_index.html')
 
+@app.route('/get_recommendation', methods=['GET'])
+def get_recommendation():
+    result = recommend_next_activity()
+    return jsonify({'recommendation': result})
 
-@app.route("/activities")
-def get_activities():
-    activities = load_json_data("activities.json")
-    return jsonify(activities)
+@app.route('/append_info', methods=['GET'])
+def append_info():
+    result = append_info_to_user()
+    return jsonify({'message': result})
 
-
-@app.route("/user_profiles")
-def get_user_profiles():
-    users = load_json_data("user_profiles.json")
-    return jsonify(users)
-
-
-if __name__ == "__main__":
-    app.run(debug=True)
+if __name__ == '__main__':
+    app.run(debug=True, host='0.0.0.0', port=5000)

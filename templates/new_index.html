@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flask Recommend App</title>
+    <script>
+        function getRecommendation() {
+            document.getElementById('result').innerText = "Waiting...";
+            document.getElementById('like-button').style.display = 'none'; // Hide Like button while waiting
+            
+            fetch('/get_recommendation')
+                .then(response => response.json())
+                .then(data => {
+                    document.getElementById('result').innerText = data.recommendation;
+                    document.getElementById('like-button').style.display = 'block'; // Show Like button after result
+                });
+        }
+
+        function appendInfoToUser() {
+            fetch('/append_info')
+                .then(response => response.json())
+                .then(data => {
+                    alert(data.message); // Show feedback to the user
+                });
+        }
+    </script>
+</head>
+<body>
+    <h1>Welcome to the Recommendation Page</h1>
+    <button onclick="getRecommendation()">Get Recommendation</button>
+    <p id="result"></p>
+    <button id="like-button" onclick="appendInfoToUser()" style="display: none;">Like</button>
+</body>
+</html>
+
