@@ -60,23 +60,19 @@ def recommend(user_profile,activities):
     return recomended_index
 
 
-def recommend_next_activity(user_profile):
+def recommend_next_activity():
+    user_profile={}
     #read activities
     activity_number = 5
     activities = read_activities(activity_number)
 
     #recommend
-    recommended_actiity_index = recommend(user_profile, activities)  
+    recommended_activity_index = recommend(user_profile, activities)  
 
-    print(recommended_actiity_index)
+    print(recommended_activity_index)
    
 
-
-
-
-    #test
-
-    return recommended_actiity_index
+    return recommended_activity_index
 
 def main():
     # profile_numer = 10
@@ -88,7 +84,7 @@ def main():
     with open(user_profile_file_name, 'r') as content_file:
             user_profile=json.load(content_file)
 
-    recommend_next_activity(user_profile)
+    recommend_next_activity()
 
 
 # Run the app
