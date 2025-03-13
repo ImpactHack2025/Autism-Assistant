@@ -6,13 +6,17 @@
     <title>Flask Recommend App</title>
     <script>
         function getRecommendation() {
-            document.getElementById('result').innerText = "Waiting...";
+            document.getElementById('rec1').innerText = "Waiting...";
+            // document.getElementById('rec2').innerText = "Waiting...";
+            // document.getElementById('rec3').innerText = "Waiting...";
             document.getElementById('like-button').style.display = 'none'; // Hide Like button while waiting
-            
+
             fetch('/get_recommendation')
                 .then(response => response.json())
                 .then(data => {
-                    document.getElementById('result').innerText = data.recommendation;
+                    document.getElementById('rec1').innerText = data.rec1;
+                    document.getElementById('rec2').innerText = data.rec2;
+                    document.getElementById('rec3').innerText = data.rec3;
                     document.getElementById('like-button').style.display = 'block'; // Show Like button after result
                 });
         }
@@ -29,8 +33,9 @@
 <body>
     <h1>Welcome to the Recommendation Page</h1>
     <button onclick="getRecommendation()">Get Recommendation</button>
-    <p id="result"></p>
+    <p id="rec1"></p>
+    <p id="rec2"></p>
+    <p id="rec3"></p>
     <button id="like-button" onclick="appendInfoToUser()" style="display: none;">Like</button>
 </body>
 </html>
-
