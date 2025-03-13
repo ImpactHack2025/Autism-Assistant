@@ -71,10 +71,14 @@ def recommend_next_activity():
     print(recommended_activity_index)
    
    
+    filed_1:str=activities[recommended_activity_index]["activity_name"]
+    filed_2=activities[recommended_activity_index]["age_range"]
+    filed_3=activities[recommended_activity_index]["steps"]
+    #activity_str = json.dumps(activities[recommended_activity_index], indent=2)
 
-    activity_str = json.dumps(activities[recommended_activity_index], indent=2)
+    return filed_1, filed_2, filed_3
 
-    return activity_str
+    #return activity_str
 
 
 
@@ -94,8 +98,8 @@ def home():
 
 @app.route('/get_recommendation', methods=['GET'])
 def get_recommendation():
-    result = recommend_next_activity()
-    return jsonify({'recommendation': result})
+    rec1, rec2, rec3 = recommend_next_activity()
+    return jsonify({'rec1': rec1, 'rec2': rec2, 'rec3': rec3})
 
 @app.route('/append_info', methods=['GET'])
 def append_info():
