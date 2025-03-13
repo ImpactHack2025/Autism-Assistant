@@ -34,6 +34,10 @@ a {
     top:12px;
 }
 
+.iphone-pro .frame:hover {
+    background-color: #4a90e2;
+}
+
 .iphone-pro .btn-div {
     display: flex;
     flex-direction: column;
