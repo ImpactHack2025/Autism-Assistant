@@ -27,10 +27,6 @@ body {
     background-color: #0056b3;
 }
 
-.buttons-container {
-    padding-bottom: 30px;
-}
-
 .btn {
     font-size: 20px;
     padding: 15px;
@@ -71,7 +67,7 @@ body {
 
 .dark-mode button {
     background-color: #333;
-    color: white
+    color: white;
 }
 
 .schedule, .emotions {
@@ -89,4 +85,22 @@ body {
 
 .language-select {
     margin-top: 20px;
+}
+
+/* Stack the buttons on top of each other */
+.buttons-container {
+    display: flex;
+    flex-direction: column; /* Stack elements vertically */
+    align-items: center; /* Center items horizontally */
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.btn {
+    font-size: 1.5rem; /* Make buttons bigger */
+    padding: 15px 30px;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    width
 }

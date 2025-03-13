@@ -16,11 +16,6 @@
     </a>
 
     <div class="container buttons-container">
-        <div class="auth-buttons">
-            <button class="btn btn-success" data-i18n="signup-signin">Sign Up / Sign In</button>
-        </div>
-
-        <p data-i18n="message">Click a button to hear the text!</p>
 
         <label for="language" data-i18n="select-language">Select Language:</label>
         <select id="language" onchange="changeLanguage()">
@@ -29,23 +24,12 @@
             <option value="fa">Persian</option>
         </select>
         
-        <button class="btn calm" onclick="speakText('calm-btn')" data-i18n="calm-btn">Next</button>
-        <button class="btn focus" onclick="speakText('focus-btn')" data-i18n="focus-btn">Like</button>
-        <button class="btn" class="dark-mode" onclick="toggleDarkMode()" data-i18n="toggle-dark">Toggle Dark Mode</button>
-        
-        <div class="schedule">
-            <h2 data-i18n="schedule-title">Daily Schedule</h2>
-            <div class="schedule-item" onclick="speakText('breakfast')" data-i18n="breakfast">🍽️ Breakfast</div>
-            <div class="schedule-item" onclick="speakText('playtime')" data-i18n="playtime">🎮 Playtime</div>
-            <div class="schedule-item" onclick="speakText('nap')" data-i18n="nap">🛏️ Nap Time</div>
+        <div class="buttons-container">
+            <button class="btn calm" onclick="speakText('calm-btn')" data-i18n="calm-btn">Next</button>
+            <button class="btn focus" onclick="speakText('focus-btn')" data-i18n="focus-btn">Like</button>
         </div>
         
-        <div class="emotions">
-            <h2 data-i18n="emotion-title">How Do You Feel?</h2>
-            <div class="emotion-item" onclick="speakText('happy')" data-i18n="happy">😊 Happy</div>
-            <div class="emotion-item" onclick="speakText('sad')" data-i18n="sad">😢 Sad</div>
-            <div class="emotion-item" onclick="speakText('excited')" data-i18n="excited">😃 Excited</div>
-        </div>
+        <button class="btn dark-mode" onclick="toggleDarkMode()" data-i18n="toggle-dark">Toggle Dark Mode</button>
     </div>
 </body>
 </html>
